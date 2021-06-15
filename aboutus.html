@@ -1,0 +1,256 @@
+<head>
+
+    <title>Indian cuisine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        body {
+            background: rgb(110, 168, 149);
+
+        }
+
+        .carousel {
+            background: rgb(110, 168, 149);
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            min-height: 250px;
+            max-height: 250px;
+        }
+
+        footer {
+            display: block;
+            text-align: center;
+            padding: 3px;
+            height: auto;
+        }
+
+        li {
+            display: inline;
+            float: none;
+            text-align: center;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .xyz {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--login-->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-default">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup-->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <input type="password" id="orangeForm-pass" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-deep-orange">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--navbar-->
+    <nav class="navbar navbar-inverse" style="width: 100%;top:0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Indian cuisine</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="aboutus.html">ABOUTUS</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" class="btn btn-black btn-rounded mb-4" data-toggle="modal"
+                            data-target="#modalLoginForm">LOGIN</a></li>
+                    <li><a href="" class="btn btn-black btn-rounded mb-4" data-toggle="modal"
+                            data-target="#modalRegisterForm">SIGN UP</a></li>
+                </ul>
+
+            </div>
+    </nav>
+    <!--review-->
+    <div class="container " style="text-align: center; background-color: rgb(110, 168, 149); ">
+        <div class="jumbotron ">
+            <h2>Order Online Now</h2>
+            <br>
+            <button type="button" class="btn btn-default">Pick up</button>
+
+            <button type="button" class="btn btn-primary">Delivary</button>
+        </div>
+        <h3>Authentic Indian Cuisine cooked with love and spiced to perfection</h3>
+        <p style="margin: auto;
+        width: 60%;
+        padding: 5px;">Our restaurant serves Indian cuisine, in its most authentic form. This family-owned business
+            from India began
+            its story In Indiana almost a decade ago, Our main chef mastered the art of Indian cooking and the menu
+            beasts several of his signature entree and drink creations for you to experience.</p>
+    </div>
+    <br>
+    <!--corousel-->
+    <div id="myCarousel" class=" container carousel slide carousel-fade d-block w-100" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active d-block w-100" data-interval="600">
+                <img src="image/southindian.jpeg" class="img" alt="South Indian Food">
+
+                <div class="carousel-caption">
+                    <h3>South Indian Food</h3>
+                    <p>LA is always so much fun!</p>
+                </div>
+            </div>
+
+            <div class="item d-block w-100" data-interval="10000">
+                <img src="image/northindian.jpeg" class="img" alt="North Indian Food">
+                <div class="carousel-caption">
+                    <h3>North Indian Food</h3>
+                    <p>LA is always so much fun!</p>
+                </div>
+            </div>
+
+            <div class="item d-block w-100" data-interval="10000">
+                <img src="image/desserts.jpeg" class="img" alt="Desserts">
+                <div class="carousel-caption">
+                    <h3>Desserts</h3>
+                    <p>LA is always so much fun!</p>
+                </div>
+            </div>
+
+            <div class="item d-block w-100" data-interval="10000">
+                <img src="image/drinks.jpeg" class="img" alt="drinks">
+                <div class="carousel-caption">
+                    <h3>Drinks</h3>
+                    <p>LA is always so much fun!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--details-->
+    <h2 class="container" style="text-align: center;color: rgb(8, 8, 8);background-color: rgb(110, 168, 149);">Our Best
+        Services</h2>
+    <div class="container" style="text-align: center; background-color: rgb(110, 168, 149); ">
+        <div class="jumbotron ">
+            <div class="row">
+                <div class=col-md-4>
+                    <a><img style=" height:100px; " src=" image/chef_icon_150222.png" alt=" chef"></a>Best Chef
+                    <p>xyz</p>
+                </div>
+                <div class=col-md-4>
+                    <a><img src="image/menu_icon_150232.png" alt=" food"></a>Quality Food
+                </div>
+                <div class=col-md-4>
+                    <a><img src="image/food_patter_icon_150227.png" alt=" cook"></a>Perfect Cook
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer" style="background-color:rgb(142, 179, 142)">
+        <div class="row">
+            <h5 style="color:white"><i class="fas fa-seedling" style="color:white"></i> INDIAN CUISINE</h5>
+            <div class="row" style="display: contents;">
+                <ul class="list-unstyled">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">MENU</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">CONTACT DETAILS</a></li>
+                </ul>
+            </div>
+            <br>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
