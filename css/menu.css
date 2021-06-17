@@ -137,3 +137,10 @@ ul.nav-pills {
 .list-group-item-text {
   margin: 0 0 11px;
 }
+.m {
+  min-width: 400px;
+  min-height: 250px;
+  max-width: 400px;
+  max-height: 250px;
+  transform: rotateY(180deg);
+}
