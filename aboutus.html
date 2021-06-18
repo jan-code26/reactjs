@@ -8,6 +8,11 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         body {
+            font-family: 'Indie Flower', cursive;
+            font-size: 200%;
+        }
+
+        body {
             background: rgb(110, 168, 149);
 
         }
@@ -21,33 +26,133 @@
             margin-left: auto;
             margin-right: auto;
             width: 50%;
-            min-height: 250px;
-            max-height: 250px;
+            min-height: 300px;
+            max-height: 300px;
         }
 
-        footer {
-            display: block;
-            text-align: center;
-            padding: 3px;
-            height: auto;
+        section {
+            padding: 60px 0 18px;
         }
 
-        li {
-            display: inline;
-            float: none;
+        section .section-title {
             text-align: center;
+            color: #007b5e;
+            margin-bottom: 50px;
+            text-transform: uppercase;
         }
 
-        li a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
+        #footer {
+            background: #232323 !important;
         }
+
+        #footer h5 {
+            padding-left: 10px;
+            border-left: 3px solid #eeeeee;
+            padding-bottom: 6px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        #footer a {
+            color: #ffffff;
+            text-decoration: none !important;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        #footer ul.social li {
+            padding: 3px 0;
+        }
+
+        #footer ul.social li a i {
+            margin-right: 5px;
+            font-size: 25px;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+        #footer ul.social li:hover a i {
+            font-size: 30px;
+            margin-top: -10px;
+        }
+
+        #footer ul.social li a,
+        #footer ul.quick-links li a {
+            color: #979797;
+        }
+
+        #footer ul.quick-links li a:hover {
+            color: #fff;
+        }
+
+        #footer ul.social li a:hover {
+            color: #eeeeee;
+        }
+
+        #footer ul.quick-links li {
+            padding: 3px 0;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+        #footer ul.quick-links li:hover {
+            padding: 3px 0;
+            margin-left: 5px;
+            font-weight: 700;
+        }
+
+        #footer ul.quick-links li a i {
+            margin-right: 5px;
+        }
+
+        #footer ul.quick-links li:hover a i {
+            font-weight: 700;
+        }
+
+        @media (max-width:767px) {
+            #footer h5 {
+                padding-left: 0;
+                border-left: transparent;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
 
         .xyz {
             height: 100px;
+        }
+
+        header.masthead {
+            position: relative;
+            background-color: #f7fbff;
+            height: auto;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+        }
+
+        header.masthead .overlay {
+            position: absolute;
+            background-color: #212529;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: .3
+        }
+
+        header.masthead h1 {
+            font-size: 2rem
+        }
+
+        .my-padding {
+            color: #266eb6;
         }
     </style>
 </head>
@@ -129,13 +234,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Indian cuisine</a>
+                <a class="navbar-brand" href="aboutus.html">Indian cuisine</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="aboutus.html">ABOUTUS</a></li>
                     <li><a href="menu.html">MENU</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="" class="btn btn-black btn-rounded mb-4" data-toggle="modal"
@@ -147,14 +252,20 @@
             </div>
     </nav>
     <!--review-->
-    <div class="container " style="text-align: center; background-color: rgb(110, 168, 149); ">
-        <div class="jumbotron ">
-            <h2>Order Online Now</h2>
-            <br>
-            <button type="button" class="btn btn-default">Pick up</button>
-
-            <button type="button" class="btn btn-primary">Delivary</button>
-        </div>
+    <div class="container-fluid " style="text-align: center; background-color: rgb(110, 168, 149); ">
+        <header class="masthead text-white text-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto mt-5">
+                        <h1 class="mb-5">North indian • South Indian • Desserts</h1>
+                    </div>
+                    <div class="col-xl-12 mx-auto order-now my-padding">
+                        <h1 href="#">Order Now!</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
         <h3>Authentic Indian Cuisine cooked with love and spiced to perfection</h3>
         <p style="margin: auto;
         width: 60%;
@@ -165,7 +276,7 @@
     </div>
     <br>
     <!--corousel-->
-    <div id="myCarousel" class=" container carousel slide carousel-fade d-block w-100" data-ride="carousel">
+    <div id="myCarousel" class=" container-fluid carousel slide carousel-fade d-block w-100 " data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active d-block w-100" data-interval="600">
@@ -215,12 +326,12 @@
     <!--details-->
     <h2 class="container" style="text-align: center;color: rgb(8, 8, 8);background-color: rgb(110, 168, 149);">Our Best
         Services</h2>
-    <div class="container" style="text-align: center; background-color: rgb(110, 168, 149); ">
+    <div class="container-fluid" style="text-align: center; background-color: rgb(110, 168, 149); ">
         <div class="jumbotron ">
             <div class="row">
                 <div class=col-md-4>
                     <a><img style=" height:100px; " src=" image/chef_icon_150222.png" alt=" chef"></a>Best Chef
-                    <p>xyz</p>
+
                 </div>
                 <div class=col-md-4>
                     <a><img src="image/menu_icon_150232.png" alt=" food"></a>Quality Food
@@ -232,20 +343,59 @@
         </div>
     </div>
     <!--footer-->
-    <footer class="footer" style="background-color:rgb(142, 179, 142)">
-        <div class="row">
-            <h5 style="color:white"><i class="fas fa-seedling" style="color:white"></i> INDIAN CUISINE</h5>
-            <div class="row" style="display: contents;">
-                <ul class="list-unstyled">
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">CONTACT US</a></li>
-                    <li><a href="">CONTACT DETAILS</a></li>
-                </ul>
+    <section id="footer" style="font-size: 100%;">
+        <div>
+            <div class="row text-xs-center text-sm-left text-md-left mb-5">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <h5 class="txt-upper">About Restro</h5>
+                    <p class=" text-justify " style="color: #ffffff;"> We serve variety of regional and <br>traditional
+                        cuisines native to the <br>Indian subcontinent. </p>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 ">
+                    <h5 class="txt-upper" style="color: #ffffff;">HOURS</h5>
+                    <p style="color: #ffffff;"> LUNCH:
+                        <br> Mon-Fri: 11:30 AM - 2:30 PM
+                        <br>
+                        <br> DINNER:
+
+                        <br> Mon-Thu: 4:45 PM - 10:30 PM
+                        <br> Fri: 4:45 PM - 11 PM
+                        <br> Sat: 4:30 PM - 11 PM
+                        <br> Sun: 5:00 PM - 10:30 PM
+                    <p>
+
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <h5 class="txt-upper">Featured Menus</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();">North Indian</a></li>
+                        <li><a href="javascript:void();">South Indian</a></li>
+                        <li><a href="javascript:void();">Desserts</a></li>
+                        <li><a href="javascript:void();">Drinks</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <h5 class="txt-upper">Quick links</h5>
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="javascript:void();">About</a></li>
+                        <li><a href="javascript:void();">Menu</a></li>
+                        <li><a href="javascript:void();">Contact Us</a></li>
+
+                    </ul>
+                </div>
             </div>
-            <br>
+            <hr class="myhr">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2  " style="color: #ffffff;">
+
+                    <p class="h6">Copyright © All Rights Reserved.<a class="text-green ml-2" href="#"
+                            target="_blank">Indian Cusine</a></p>
+                </div>
+                <hr>
+            </div>
         </div>
-    </footer>
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
